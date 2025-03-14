@@ -4,8 +4,7 @@ import { prisma } from '@/db/prisma';
 import CredentialsProvider from 'next-auth/providers/credentials';
 import { compareSync } from 'bcrypt-ts-edge';
 import type { NextAuthConfig } from 'next-auth';
-// setup Next Auth. We're getting these stuffs from the documentation next auth page: https://next-auth.js.org/providers/credentials
-// All these stuffs are detailed explained in the file 04-next-auth-setup.md
+
 export const config = {
     pages: {
         signIn: '/sign-in',
